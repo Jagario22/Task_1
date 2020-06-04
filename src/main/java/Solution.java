@@ -29,7 +29,7 @@ public class Solution {
         //Task 9 Количество элементов, больших предыдущего
         method_9(5, new int[]{1, 2, 3, 4, 5});
 
-        //Task 10 Количество элементов, больших предыдущего
+        //Task 10 Количество элементов больших обоих соседей
         method_10(5, new int[] {1, 5, 1, 5, 1});
 
         //Task 11 Переставить соседние элементы
@@ -108,7 +108,7 @@ public class Solution {
     }
 
     private static void method_9(int n, int[] arr) {
-        if (n < 1 && n > 1000)
+        if (n < 1 && n > 10000)
             return;
 
         System.out.println("9) n: " + n + ", arr: " + Arrays.toString(arr));
@@ -139,7 +139,7 @@ public class Solution {
     }
 
     private static void method_11(int n, int[] arr) {
-        if (n < 1 && n > 100)
+        if (n < 1 && n > 35)
             return;
         int temp;
         System.out.println("11) n: " + n + ", arr: " + Arrays.toString(arr));
